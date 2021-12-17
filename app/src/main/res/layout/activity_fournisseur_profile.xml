@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FournisseurProfile">
+
+    <TextView
+        android:id="@+id/NomFournisseur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="163dp"
+        android:layout_marginBottom="640dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="164dp"
+        android:layout_marginBottom="572dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/NumTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="173dp"
+        android:layout_marginBottom="380dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Mdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="169dp"
+        android:layout_marginBottom="426dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="169dp"
+        android:layout_marginBottom="466dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="166dp"
+        android:layout_marginBottom="524dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/deco_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="145dp"
+        android:layout_marginBottom="124dp"
+        android:text="Button" />
+</RelativeLayout>
