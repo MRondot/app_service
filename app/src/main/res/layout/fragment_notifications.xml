@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BFBDBD"
-    tools:context=".ui.notifications.NotificationsFragment"
+    tools:context=".client.ui.notifications.NotificationsFragment"
     >
 
     <TextView
@@ -26,7 +26,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
         android:text="Information du compte"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="43dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.app_service.client;
+package com.example.app_service.client.reservation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,7 +20,7 @@ public class Code_Postal extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.imageButton:
+            case R.id.imageButtonContinue:
                 Intent cEntreprise_intent = new Intent(Code_Postal.this, ChoixEntreprise.class);
                 startActivity(cEntreprise_intent);
                 break;

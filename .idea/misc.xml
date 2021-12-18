@@ -6,9 +6,13 @@
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.36875" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/drawable/ic_launcher_background.xml" value="0.36875" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_acceuil.xml" value="0.22" />
-        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_accueil.xml" value="0.33" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_accueil.xml" value="0.18" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_calendrier_rdv.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_choix_entreprise.xml" value="0.2015625" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_choix_reservation.xml" value="0.33" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_code_postal.xml" value="0.33" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_date_rdv.xml" value="0.5" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_horaire_rdv.xml" value="0.34193840579710144" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_list_rdv.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_profile.xml" value="0.2015625" />

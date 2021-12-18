@@ -8,5 +8,7 @@
     <string name="title_home">Accueil</string>
     <string name="title_dashboard">Rendez-Vous</string>
     <string name="title_notifications">Profil</string>
-    <string name="for_who">Par qui ?</string>
+    <string name="from_who">Par qui ?</string>
+    <string name="for_what">Quelle prestation?</string>
+    <string name="continuer">Continuer</string>
 </resources>

@@ -10,13 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_service">
         <activity
-            android:name=".client.ChoixEntreprise"
+            android:name=".client.reservation.CalendrierRdv"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.HoraireRdv"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.DateRdv"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.ChoixReservation"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.ChoixEntreprise"
             android:exported="false" />
         <activity
             android:name=".client.ListRdv"
             android:exported="false" />
         <activity
-            android:name=".client.Code_Postal"
+            android:name=".client.reservation.Code_Postal"
             android:exported="false" />
         <activity
             android:name=".client.Profile"
