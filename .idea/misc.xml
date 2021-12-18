@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.36875" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/drawable/ic_launcher_background.xml" value="0.36875" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_acceuil.xml" value="0.22" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_accueil.xml" value="0.33" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_choix_entreprise.xml" value="0.2015625" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_code_postal.xml" value="0.33" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_list_rdv.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_profile.xml" value="0.2015625" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_rdv.xml" value="0.2" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_rdv_historique.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/activity_rdv_modification.xml" value="0.2015625" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/layout/fragment_notifications.xml" value="0.25" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Maxence/Documents/GitHub/app_service/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.35260416666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
       </map>
     </option>

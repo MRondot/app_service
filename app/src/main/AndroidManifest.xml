@@ -10,8 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_service">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".client.ChoixEntreprise"
+            android:exported="false" />
+        <activity
+            android:name=".client.ListRdv"
+            android:exported="false" />
+        <activity
+            android:name=".client.Code_Postal"
+            android:exported="false" />
+        <activity
+            android:name=".client.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".client.Accueil"
+            android:exported="true"
+            android:label="@string/title_activity_accueil">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
