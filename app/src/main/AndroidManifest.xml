@@ -59,13 +59,14 @@
             android:name=".fournisseurPackage.liste_resa"
             android:exported="true" />
         <activity
-            android:name=".client.Accueil"
-            android:exported="false"
-            android:label="@string/title_activity_accueil"/>
-        <activity
             android:name=".fournisseurPackage.FournisseurProfile"
             android:exported="true"
-            android:label="@string/title_FournisseurProfile">
+            android:label="@string/title_FournisseurProfile"/>
+        <activity
+            android:name=".client.Accueil"
+            android:exported="true"
+            android:label="@string/title_activity_accueil">
+
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
