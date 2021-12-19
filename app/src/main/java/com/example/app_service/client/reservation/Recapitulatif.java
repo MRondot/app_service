@@ -157,6 +157,7 @@ public class Recapitulatif extends AppCompatActivity {
             coupe.setText("Coupe");
             prix = prix + Coupe_prix;
         }
+
         if (prestation.contains("coloration")) {
             TextView coloration =findViewById(R.id.coloration);
             coloration.setText("Coloration");

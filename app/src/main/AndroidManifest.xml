@@ -11,28 +11,37 @@
         android:theme="@style/Theme.App_service">
         <activity
             android:name=".client.reservation.Validation"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.Recapitulatif"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.Adresse"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.HoraireRdv"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.DateRdv"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"
+            />
         <activity
             android:name=".client.reservation.ChoixReservation"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.ChoixEntreprise"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.reservation.Code_Postal"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_Reservation"/>
         <activity
             android:name=".client.Profile"
             android:exported="false" />
@@ -43,7 +52,8 @@
 
         <activity
             android:name=".fournisseurPackage.FournisseurProfile"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/title_FournisseurProfile"/>
         <activity
             android:name=".fournisseurPackage.Authentification_screen"
             android:exported="false"/>

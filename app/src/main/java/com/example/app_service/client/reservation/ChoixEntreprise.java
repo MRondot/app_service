@@ -8,18 +8,25 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 import com.example.app_service.R;
+import com.example.app_service.classes.Fournisseur;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ChoixEntreprise extends AppCompatActivity {
 
     String Etest="Entreprise Test";
     Bundle bun = new Bundle();
     Bundle extras;
+    JSONObject EntrepriseTest = new JSONObject();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +37,7 @@ public class ChoixEntreprise extends AppCompatActivity {
         // TODO A Modifier avec la BDD.
         //Exemple Entreprise
 
-        JSONObject EntrepriseTest = new JSONObject();
+
         try {
             EntrepriseTest.put("id", "1");
             EntrepriseTest.put("nomFournisseur", "Entreprise Test");
@@ -39,11 +46,11 @@ public class ChoixEntreprise extends AppCompatActivity {
             EntrepriseTest.put("mail", "test@gmail.com");
             EntrepriseTest.put("site", "testcoiffure.fr");
             EntrepriseTest.put("description", "Ici pour tester les meilleures coiffures");
-
         } catch (JSONException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
     }
 
     public void onClick(View view) {
@@ -59,11 +66,6 @@ public class ChoixEntreprise extends AppCompatActivity {
 
         }
     }
-    public void displayEntreprise(JSONObject EntrepriseTest) throws JSONException {
-
-            //ListView list =findViewById(R.id.listview);
-            //list.setAdapter(new ArrayAdapter<>(this,R.layout.horaire,));
-            //EntrepriseTest.getString("NomFournisseur");
-
+    public void displayEntreprise() {
     }
 }

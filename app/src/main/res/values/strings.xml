@@ -40,5 +40,8 @@
     <string name="vos_rdv">Vos Rendez-Vous</string>
     <string name="historique">Historique</string>
     <string name="information_du_compte">Information du compte</string>
+    <string name="title_FournisseurProfile">Profil</string>
+    <string name="title_Code_Postal">Votre Code Postal</string>
+    <string name="title_Reservation">Réservation</string>
 
 </resources>

@@ -24,6 +24,15 @@ public class Fournisseur {
 
     }
 
+    public Fournisseur(String nomFournisseur,String adresseF,String mail,String site,String description){
+        this.nomFournisseur = nomFournisseur;
+        this.adresseF = adresseF;
+        this.mail = mail;
+        this.site = site;
+        this.description = description;
+
+    }
+
     public String getNomFournisseur() {
         return nomFournisseur;
     }

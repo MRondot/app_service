@@ -44,7 +44,6 @@ public class ChoixReservation extends AppCompatActivity {
                 shampoing = findViewById(R.id.CB_shampoing);
                 prestation = new ArrayList<>();
 
-
                 if(homme.isChecked()){
                     bun.putString("typeclient","homme");
                 }else if(femme.isChecked()){
@@ -67,7 +66,7 @@ public class ChoixReservation extends AppCompatActivity {
                 bun.putStringArrayList("prestation",prestation);
 
 
-                if(bun.getString("typeclient")!=null) {
+                if(bun.getString("typeclient")!=null || bun.getString("prestation")!=null) {
                     Intent cDateRdv_intent = new Intent(ChoixReservation.this, DateRdv.class);
                     cDateRdv_intent.putExtras(bun);
                     startActivity(cDateRdv_intent);
