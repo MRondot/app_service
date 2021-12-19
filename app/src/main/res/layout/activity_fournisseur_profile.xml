@@ -1,78 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fournisseurPackage.FournisseurProfile">
+    android:id="@+id/ConstraintLayout"
+    tools:context=".fournisseurPackage.FournisseurProfile"
+    style="@style/basic_style">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="354dp"
+        android:layout_height="227dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079"
+        app:srcCompat="@drawable/background_line" />
 
     <TextView
         android:id="@+id/NomFournisseur"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="163dp"
-        android:layout_marginBottom="640dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
 
     <TextView
         android:id="@+id/Adresse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="164dp"
-        android:layout_marginBottom="572dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="624dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/NumTel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="173dp"
-        android:layout_marginBottom="380dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="476dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Mdp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="169dp"
-        android:layout_marginBottom="426dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="512dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Site"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="169dp"
-        android:layout_marginBottom="466dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="552dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="166dp"
-        android:layout_marginBottom="524dp"
-        android:text="TextView" />
+        android:layout_width="329dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="588dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/deco_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="145dp"
-        android:layout_marginBottom="124dp"
-        android:text="Button" />
-</RelativeLayout>
+        android:layout_marginTop="328dp"
+        android:backgroundTint="#F9B25F"
+        android:text="Deconnexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumTel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
