@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fournisseurPackage.liste_resa">
+
+    <TextView
+        android:id="@+id/Titre_rdv"
+        android:layout_width="115dp"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="574dp"
+        android:text="Vos Rendez-vous"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/adresseClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="249dp"
+        android:layout_marginBottom="427dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <TextView
+        android:id="@+id/heure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="126dp"
+        android:layout_marginBottom="429dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/nomClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="495dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <Button
+        android:id="@+id/suppression_rdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="350dp"
+        android:text="Supprimer"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="185dp" />
+
+    <Button
+        android:id="@+id/consulter_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginBottom="348dp"
+        android:text="consulter profil"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="430dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+</RelativeLayout>

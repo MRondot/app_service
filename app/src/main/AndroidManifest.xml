@@ -31,23 +31,36 @@
             android:name=".client.reservation.ChoixEntreprise"
             android:exported="false" />
         <activity
-            android:name=".client.ListRdv"
-            android:exported="false" />
-        <activity
             android:name=".client.reservation.Code_Postal"
             android:exported="false" />
         <activity
             android:name=".client.Profile"
             android:exported="false" />
+
+        <activity
+            android:name=".fournisseurPackage.FournisseurInscription"
+            android:exported="false" />
+
+        <activity
+            android:name=".fournisseurPackage.FournisseurProfile"
+            android:exported="false" />
+        <activity
+            android:name=".fournisseurPackage.Authentification_screen"
+            android:exported="false"/>
+
+        <activity
+            android:name=".fournisseurPackage.liste_resa"
+            android:exported="true" />
         <activity
             android:name=".client.Accueil"
             android:exported="true"
             android:label="@string/title_activity_accueil">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
     </application>
 

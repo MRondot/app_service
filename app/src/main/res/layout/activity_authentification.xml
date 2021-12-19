@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fournisseurPackage.Authentification_screen" >
+
+    <EditText
+        android:id="@+id/adresseMail"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="131dp"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/mdp"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adresseMail"
+        android:layout_marginTop="19dp"
+        android:layout_alignRight="@+id/adresseMail"
+        android:text="test" />
+
+    <Button
+        android:id="@+id/connexion_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="236dp"
+        android:layout_marginTop="306dp"
+        android:text="connexion pro" />
+
+    <Button
+        android:id="@+id/connexion_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="306dp"
+        android:text="connexion client" />
+
+    <Button
+        android:id="@+id/inscription_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connexion_pro"
+        android:layout_alignRight="@+id/connexion_pro"
+        android:layout_marginTop="40dp"
+        android:text="inscirption pro" />
+
+    <Button
+        android:id="@+id/inscription_client"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connexion_client"
+        android:layout_alignRight="@+id/connexion_client"
+        android:layout_marginTop="40dp"
+        android:text="inscription client" />
+
+
+</RelativeLayout>
