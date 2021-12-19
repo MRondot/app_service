@@ -50,10 +50,7 @@
             android:name=".fournisseurPackage.FournisseurInscription"
             android:exported="false" />
 
-        <activity
-            android:name=".fournisseurPackage.FournisseurProfile"
-            android:exported="false"
-            android:label="@string/title_FournisseurProfile"/>
+
         <activity
             android:name=".fournisseurPackage.Authentification_screen"
             android:exported="false"/>
@@ -63,8 +60,12 @@
             android:exported="true" />
         <activity
             android:name=".client.Accueil"
+            android:exported="false"
+            android:label="@string/title_activity_accueil"/>
+        <activity
+            android:name=".fournisseurPackage.FournisseurProfile"
             android:exported="true"
-            android:label="@string/title_activity_accueil">
+            android:label="@string/title_FournisseurProfile">
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
