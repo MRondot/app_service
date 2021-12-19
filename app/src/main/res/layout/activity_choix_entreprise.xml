@@ -57,4 +57,13 @@
         app:layout_constraintStart_toStartOf="@+id/imageButtonContinue2"
         app:layout_constraintTop_toTopOf="@+id/imageButtonContinue2" />
 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="409dp"
+        android:layout_height="438dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonContinue2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

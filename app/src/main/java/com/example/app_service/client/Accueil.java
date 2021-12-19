@@ -20,8 +20,7 @@ import com.example.app_service.databinding.ActivityAccueilBinding;
 public class Accueil extends AppCompatActivity {
 
     private ActivityAccueilBinding binding;
-    ListView simpleList;
-    String countryList[] = {"India", "China", "australia", "Portugle", "America", "NewZealand"};
+    Bundle bun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +43,8 @@ public class Accueil extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.imageButton:
+            case R.id.coiffeurButton:
+
                 Intent cPostal_intent = new Intent(Accueil.this, Code_Postal.class);
                 startActivity(cPostal_intent);
                 break;

@@ -32,6 +32,7 @@ public class Recapitulatif extends AppCompatActivity {
         setContentView(R.layout.activity_recapitulatif);
         extras = getIntent().getExtras();
 
+        //A Modifier avec la BDD.
         //Exemple Entreprise
         JSONObject EntrepriseTest = new JSONObject();
         try {
@@ -51,6 +52,11 @@ public class Recapitulatif extends AppCompatActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+
+
+
+
+
         calculPrix(EntrepriseTest);
         try {
 
@@ -81,6 +87,25 @@ public class Recapitulatif extends AppCompatActivity {
             case R.id.imageButtonContinue2:
                 Intent cValidation_intent = new Intent(Recapitulatif.this, Validation.class);
 
+                //TODO Renvoie des données pour match avec la classe Rendez_vous
+
+
+                //Rendez_Vous rdv = new Rendez_vous
+                // (
+                //  extras.getString("adresse"),
+                //  Nomclient,
+                //  extras.getString("typeclient"),
+                //  extras.getString("Entreprise")
+                //  extras.getStringArrayList("prestation")
+                //  extras.getString("date")
+                //  extras.getString("horaire")
+                //  id,
+                //  String.valueOf(prix)
+                //)
+                // mDatabase.child("rendez_vous").child(id).setValue(rdv);
+
+
+
                 bun.putString("Entreprise", extras.getString("Entreprise"));
                 bun.putString("codeP", extras.getString("codeP"));
                 bun.putStringArrayList("prestation", extras.getStringArrayList("prestation"));
@@ -92,13 +117,13 @@ public class Recapitulatif extends AppCompatActivity {
                 cValidation_intent.putExtras(bun);
                 startActivity(cValidation_intent);
 
-
                 break;
         }
     }
 
 
-
+    //Utilise un fichier JSON pour les données de l'entreprise/service
+    //A modifier avec la BDD
     public void calculPrix(JSONObject EntrepriseTest) {
         if (extras.getString("typeclient").equals("homme")) {
             try {
