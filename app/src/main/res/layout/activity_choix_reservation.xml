@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BFBDBD"
-    android:label="Prestation"
+    android:label="@string/prestation"
     tools:context=".client.reservation.ChoixReservation">
 
     <ImageView
@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rectangle_blanc" />
+        app:srcCompat="@drawable/rectangle_blanc"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView4"
@@ -41,7 +42,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/rectangle_orange"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView5"
@@ -64,7 +65,8 @@
         android:layout_marginTop="56dp"
         android:src="@drawable/carre_blanc"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -73,7 +75,8 @@
         android:layout_marginTop="56dp"
         android:src="@drawable/carre_blanc"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -82,13 +85,14 @@
         android:layout_marginTop="148dp"
         android:src="@drawable/carre_blanc"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="ContentDescription" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/CB_homme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Homme"
+        android:text="@string/homme"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="@+id/imageView6"
         app:layout_constraintHorizontal_bias="0.386"
@@ -97,10 +101,10 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/CB_femme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Femme"
+        android:text="@string/femme"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.361"
@@ -109,10 +113,10 @@
         app:layout_constraintVertical_bias="0.516" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/CB_enfant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enfant"
+        android:text="@string/enfant"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintHorizontal_bias="0.314"
@@ -127,32 +131,33 @@
         android:layout_marginTop="276dp"
         android:src="@drawable/carre_blanc"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="ContentDescription" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/CB_coupe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Coupe"
+        android:text="@string/coupe"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/CB_coloration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Coloration"
+        android:text="@string/coloration"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/CB_shampoing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:text="Shampoing"
+        android:text="@string/shampoing"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/imageView8" />
 
@@ -161,7 +166,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Type de client :"
+        android:text="@string/type_client"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -172,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="236dp"
-        android:text="Prestation :"
+        android:text="@string/prestation"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />

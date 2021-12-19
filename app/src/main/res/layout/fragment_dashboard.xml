@@ -15,7 +15,8 @@
         android:layout_marginTop="412dp"
         android:src="@drawable/rectangle_blanc"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/text_dashboard"
@@ -39,14 +40,15 @@
         android:src="@drawable/rectangle_blanc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Vos Rendez-Vous"
+        android:text="@string/vos_rdv"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="normal|bold"
@@ -59,7 +61,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Historique"
+        android:text="@string/historique"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
         app:layout_constraintEnd_toEndOf="@+id/imageButton8"
         app:layout_constraintStart_toStartOf="@+id/imageButton8"

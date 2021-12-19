@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/icon_coiffeur"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -54,7 +54,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/icon_jardinier"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -70,7 +70,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/icon_mecanicien"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -83,7 +83,7 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="@+id/imageButton"
         app:srcCompat="@drawable/icon_medecin"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -96,7 +96,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/icon_restaurant"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -109,6 +109,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageButton"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:srcCompat="@drawable/icon_travaux"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

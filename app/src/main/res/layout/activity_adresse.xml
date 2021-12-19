@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BFBDBD"
-    android:label="@string/date"
-    tools:context=".client.reservation.DateRdv">
-
+    tools:context=".client.reservation.Adresse">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -24,7 +22,7 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/date_rendez_vous"
+        android:text="@string/where"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -34,7 +32,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <ImageButton
-        android:id="@+id/imageButtonContinue4"
+        android:id="@+id/imageButtonContinue2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="440dp"
@@ -53,18 +51,34 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButtonContinue4"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonContinue4"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonContinue4"
-        app:layout_constraintTop_toTopOf="@+id/imageButtonContinue4" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonContinue2"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonContinue2"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonContinue2"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonContinue2" />
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="328dp"
-        android:layout_height="319dp"
-        android:layout_marginTop="56dp"
-        android:background="@color/white"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/rectangle_blanc"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="199dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/YourAdresse"
+        android:inputType="textPostalAddress"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        tools:ignore="Autofill" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

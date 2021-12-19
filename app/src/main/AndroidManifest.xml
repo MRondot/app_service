@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_service">
         <activity
-            android:name=".client.reservation.CalendrierRdv"
+            android:name=".client.reservation.Validation"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.Recapitulatif"
+            android:exported="false" />
+        <activity
+            android:name=".client.reservation.Adresse"
             android:exported="false" />
         <activity
             android:name=".client.reservation.HoraireRdv"
