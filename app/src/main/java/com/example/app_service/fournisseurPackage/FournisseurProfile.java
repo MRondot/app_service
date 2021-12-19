@@ -1,10 +1,12 @@
-package com.example.app_service;
+package com.example.app_service.fournisseurPackage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.app_service.R;
+import com.example.app_service.classes.Fournisseur;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
@@ -25,9 +27,21 @@ public class FournisseurProfile extends AppCompatActivity {
         description=findViewById(R.id.Description);
 
         fournisseur= new Fournisseur();
+        AfficheDonnees();
 
     }
 
+    private void AfficheDonnees() { // à remplir à partir des données de la bdd
+
+        nom.setText("Manu");
+        Adresse.setText("7 rue du général manu");
+        numTel.setText("06 50 80 46 79");
+        mdp.setText("jesuisunmdp");
+        site.setText("www.settext.com");
+        description.setText("C'est un service vraiment sympa!");
+
+
+    }
 
 
 }

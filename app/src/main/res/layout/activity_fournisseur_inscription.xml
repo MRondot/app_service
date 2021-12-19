@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fournisseurPackage.FournisseurInscription">
+
+    <EditText
+        android:id="@+id/nomEntreprise"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="85dp"
+        android:text="nomEntreprise" />
+
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignLeft="@+id/nomEntreprise"
+        android:layout_marginTop="26dp"
+        android:text="adresse" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignLeft="@+id/nomEntreprise"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="91dp"
+        android:text="mail" />
+
+    <EditText
+        android:id="@+id/mdp_inscription"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignLeft="@+id/nomEntreprise"
+        android:layout_marginTop="157dp"
+        android:text="mdp" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignRight="@+id/nomEntreprise"
+        android:layout_marginTop="225dp"
+        android:layout_marginRight="-1dp"
+        android:text="tel" />
+
+    <EditText
+        android:id="@+id/site_web"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignLeft="@+id/nomEntreprise"
+        android:layout_marginTop="287dp"
+        android:text="site web" />
+
+    <Spinner
+        android:id="@+id/list_service"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomEntreprise"
+        android:layout_alignLeft="@+id/nomEntreprise"
+        android:layout_marginLeft="-73dp"
+        android:layout_marginTop="360dp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="132dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="540dp"
+        android:text="submit" />
+</RelativeLayout>

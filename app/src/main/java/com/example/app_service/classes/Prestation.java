@@ -1,4 +1,4 @@
-package com.example.app_service;
+package com.example.app_service.classes;
 
 public class Prestation {
 
