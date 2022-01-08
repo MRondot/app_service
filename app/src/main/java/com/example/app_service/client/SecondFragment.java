@@ -1,6 +1,5 @@
 package com.example.app_service.client;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -13,8 +12,6 @@ import android.widget.ListView;
 import com.example.app_service.R;
 import com.example.app_service.classes.RDVListAdapter;
 import com.example.app_service.classes.Rendez_vous;
-import com.example.app_service.client.modification.Annulation;
-import com.example.app_service.client.modification.TypeClientM;
 
 import java.util.ArrayList;
 import java.util.List;
