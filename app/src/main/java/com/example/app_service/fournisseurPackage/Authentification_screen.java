@@ -10,12 +10,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.app_service.R;
+import com.example.app_service.client.ClientInscription;
 //import com.google.firebase.auth.FirebaseAuth;
 
 
 public class Authentification_screen extends AppCompatActivity implements View.OnClickListener {
 
-    //FirebaseAuth mAuth;
+
     EditText adresse_mail, mdp;
     Button connexion_pro, connexion_client, inscripton_pro, inscription_client;
 
@@ -35,7 +36,7 @@ public class Authentification_screen extends AppCompatActivity implements View.O
         connexion_client.setOnClickListener(this);
         inscription_client.setOnClickListener(this);
         inscripton_pro.setOnClickListener(this);
-        //mAuth= FirebaseAuth.getInstance();
+
     }
 
 
@@ -59,8 +60,8 @@ public class Authentification_screen extends AppCompatActivity implements View.O
                 startActivity(intent_inscription_pro);
                 break;
             case R.id.inscription_client:
-                //Intent intent_incription_client = new Intent(Authentification_screen.this, ClientInscription.class);
-                //startActivity(intent_inscription_client);
+                Intent intent_inscription_client = new Intent(Authentification_screen.this, ClientInscription.class);
+                startActivity(intent_inscription_client);
                 break;
 
         }

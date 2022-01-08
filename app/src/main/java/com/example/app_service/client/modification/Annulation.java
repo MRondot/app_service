@@ -16,10 +16,14 @@ import com.example.app_service.fournisseurPackage.FournisseurInscription;
 
 public class Annulation extends AppCompatActivity {
 
-    TextView titre, text_annul, nom_fournisseur;
+    TextView titre, text_annul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // need test
+        Bundle bundle = getIntent().getExtras();
+        String id_rdv= bundle.getString("id_rdv");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_annulation);
         
@@ -27,11 +31,12 @@ public class Annulation extends AppCompatActivity {
         titre.setText("Annulation");
 
         text_annul.findViewById(R.id.text_annulation);
-        text_annul.setText("Etes vous sûr de vouloir supprimer votre rendez-vous avec: ");
+        //String result ="select nomFournisseur from rendez_vous where id_rdv= id";
+        text_annul.setText("Etes vous sûr de vouloir supprimer votre rendez-vous avec: Le fournisseur associé à l'id_rdv" +id_rdv);
 
-        nom_fournisseur.findViewById(R.id.text_prestation);
-        //String result =select nomFournisseur from rendez_vous where id_rdv= id;
-        nom_fournisseur.setText("Le fournisseur associé à l'id_rdv");
+
+
+
     }
 
 
