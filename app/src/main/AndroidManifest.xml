@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.app_service">
+    package="com.example.app_service" >
 
     <application
         android:allowBackup="true"
@@ -8,71 +8,67 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.App_service">
+        android:theme="@style/Theme.App_service" >
+        <activity
+            android:name=".client.modification.Annulation"
+            android:exported="false" />
         <activity
             android:name=".client.reservation.Validation"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.Recapitulatif"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.Adresse"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.HoraireRdv"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.DateRdv"
             android:exported="false"
-            android:label="@string/title_Reservation"
-            />
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.ChoixReservation"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.ChoixEntreprise"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.reservation.Code_Postal"
             android:exported="false"
-            android:label="@string/title_Reservation"/>
+            android:label="@string/title_Reservation" />
         <activity
             android:name=".client.Profile"
             android:exported="false" />
-
         <activity
             android:name=".fournisseurPackage.FournisseurInscription"
             android:exported="false" />
-
-
         <activity
             android:name=".fournisseurPackage.Authentification_screen"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".fournisseurPackage.liste_resa"
             android:exported="true" />
         <activity
             android:name=".fournisseurPackage.FournisseurProfile"
             android:exported="true"
-            android:label="@string/title_FournisseurProfile"/>
+            android:label="@string/title_FournisseurProfile" />
         <activity
             android:name=".client.Accueil"
             android:exported="true"
-            android:label="@string/title_activity_accueil">
+            android:label="@string/title_activity_accueil" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
