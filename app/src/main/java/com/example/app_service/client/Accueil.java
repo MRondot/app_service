@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Accueil extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
     BottomNavigationView bottomNavigationView;
+    Bundle bun;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
         }
         return false;
     }
+
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.coiffeurButton:
@@ -58,8 +61,14 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
                 Intent cPostal_intent = new Intent(Accueil.this, Code_Postal.class);
                 startActivity(cPostal_intent);
                 break;
-
+           /* case R.id.deleteButton:
+                Intent annulation = new Intent(Accueil.this,Annulation.class);
+                String resId = (String) view.getTag();
+                annulation.putExtra("id_rdv",resId);
+                startActivity(annulation);
+                break;*/
         }
+
 
 
     }
