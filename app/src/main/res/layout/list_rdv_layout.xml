@@ -102,6 +102,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="60dp"
         android:layout_marginBottom="4dp"
+        android:onClick="launchModification"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
         app:layout_constraintStart_toEndOf="@+id/NomFournisseurLrdv"
         app:srcCompat="@android:drawable/ic_menu_manage" />
@@ -110,6 +111,7 @@
         android:id="@+id/deleteButton"
         android:layout_width="46dp"
         android:layout_height="45dp"
+        android:onClick="launchDelete"
         app:layout_constraintStart_toEndOf="@+id/modificationButton"
         app:layout_constraintTop_toTopOf="@+id/modificationButton"
         app:srcCompat="@android:drawable/ic_delete" />
