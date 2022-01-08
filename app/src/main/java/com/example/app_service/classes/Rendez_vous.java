@@ -90,6 +90,14 @@ public class Rendez_vous {
         this.prix = prix;
     }
 
+    public Rendez_vous(String nomFournisseur,String date,String heure, double prix,String prestation ){
+        this.nomFournisseur = nomFournisseur;
+        this.date = date;
+        this.prix = prix;
+        this.heure = heure;
+        this.nomPrestation = prestation;
+
+    }
 
 
 

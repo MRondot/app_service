@@ -50,6 +50,7 @@ public class HoraireRdv extends AppCompatActivity {
                     Toast.makeText(HoraireRdv.this, "Veuillez cliquer sur un horaire pour continuer", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
             case R.id.horaire:
                 TextView s =view.findViewById(R.id.horaire);
                  horaire=s.getText().toString();

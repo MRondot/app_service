@@ -43,5 +43,7 @@
     <string name="title_FournisseurProfile">Profil</string>
     <string name="title_Code_Postal">Votre Code Postal</string>
     <string name="title_Reservation">Réservation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

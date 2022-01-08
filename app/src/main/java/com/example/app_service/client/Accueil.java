@@ -2,43 +2,55 @@ package com.example.app_service.client;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
 
 import com.example.app_service.R;
 import com.example.app_service.client.reservation.Code_Postal;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import com.example.app_service.databinding.ActivityAccueilBinding;
-
-public class Accueil extends AppCompatActivity {
-
-    private ActivityAccueilBinding binding;
-    Bundle bun;
+public class Accueil extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_accueil);
 
-        binding = ActivityAccueilBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        bottomNavigationView = findViewById(R.id.nav_view);
 
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_accueil, R.id.navigation_rendezvous, R.id.navigation_profil)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_accueil);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(binding.navView, navController);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_accueil);
+
 
     }
 
+
+    FirstFragment firstFragment = new FirstFragment();
+    SecondFragment secondFragment = new SecondFragment();
+    ThirdFragment thirdFragment = new ThirdFragment();
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.navigation_accueil:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, firstFragment).commit();
+                return true;
+
+            case R.id.navigation_rendezvous:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, secondFragment).commit();
+                return true;
+
+            case R.id.navigation_profil:
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, thirdFragment).commit();
+                return true;
+        }
+        return false;
+    }
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.coiffeurButton:
@@ -51,4 +63,7 @@ public class Accueil extends AppCompatActivity {
 
 
     }
+
+
+
 }

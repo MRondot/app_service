@@ -9,86 +9,61 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="376dp"
-        android:layout_height="237dp"
-        android:layout_marginStart="4dp"
+        android:layout_width="347dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192"
+        app:layout_constraintVertical_bias="0.253"
         app:srcCompat="@drawable/carre_blancg" />
 
     <TextView
-        android:id="@+id/nomFournisseur"
+        android:id="@+id/nomFournisseurCF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="@+id/imageView12"
         app:layout_constraintTop_toTopOf="@+id/imageView12" />
 
     <TextView
-        android:id="@+id/adresseF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="76dp"
+        android:id="@+id/adresseFCF"
+        android:layout_width="131dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="92dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/nomFournisseurCF"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="@+id/nomFournisseurCF"
+        app:layout_constraintTop_toBottomOf="@+id/nomFournisseurCF" />
 
     <TextView
-        android:id="@+id/site"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="76dp"
+        android:id="@+id/descriptionCF"
+        android:layout_width="171dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur" />
-
-    <TextView
-        android:id="@+id/mail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="76dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur" />
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="220dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="124dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintHorizontal_bias="0.469"
-        app:layout_constraintStart_toStartOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/nomFournisseurCF"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="@+id/nomFournisseurCF"
+        app:layout_constraintTop_toBottomOf="@+id/nomFournisseurCF" />
 
     <Button
-        android:id="@+id/chooseButton"
+        android:id="@+id/chooseButtonCF"
         android:layout_width="99dp"
         android:layout_height="36dp"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="124dp"
+        android:onClick="myButtonTag"
         android:text="Choisir"
-        app:layout_constraintEnd_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintHorizontal_bias="0.439"
-        app:layout_constraintStart_toStartOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur"
+        app:layout_constraintEnd_toEndOf="@+id/nomFournisseurCF"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="@+id/nomFournisseurCF"
+        app:layout_constraintTop_toBottomOf="@+id/nomFournisseurCF"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <TextView
-        android:id="@+id/echelle_prix"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/nomFournisseur"
-        app:layout_constraintTop_toBottomOf="@+id/nomFournisseur" />
 </androidx.constraintlayout.widget.ConstraintLayout>

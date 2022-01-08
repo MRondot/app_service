@@ -58,7 +58,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageButtonContinue2" />
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/listViewCF"
         android:layout_width="409dp"
         android:layout_height="438dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButtonContinue2"

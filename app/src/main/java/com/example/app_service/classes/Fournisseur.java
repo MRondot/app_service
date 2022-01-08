@@ -19,6 +19,11 @@ public class Fournisseur {
         this.numTel = numTel;
         this.note = note;
     }
+    public Fournisseur (String nomFournisseur,String adresseF,String description){
+        this.nomFournisseur = nomFournisseur;
+        this.adresseF = adresseF;
+        this.description = description;
+    }
 
     public Fournisseur(){
 

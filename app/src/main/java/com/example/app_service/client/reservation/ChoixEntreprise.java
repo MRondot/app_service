@@ -12,7 +12,10 @@ import android.widget.Toast;
 
 
 import com.example.app_service.R;
+import com.example.app_service.classes.CEntrepriseListAdapter;
 import com.example.app_service.classes.Fournisseur;
+import com.example.app_service.classes.RDVListAdapter;
+import com.example.app_service.classes.Rendez_vous;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,10 +25,9 @@ import java.util.List;
 
 public class ChoixEntreprise extends AppCompatActivity {
 
-    String Etest="Entreprise Test";
+    String fournisseur;
     Bundle bun = new Bundle();
     Bundle extras;
-    JSONObject EntrepriseTest = new JSONObject();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,39 +35,47 @@ public class ChoixEntreprise extends AppCompatActivity {
         setContentView(R.layout.activity_choix_entreprise);
         extras = getIntent().getExtras();
 
-
-        // TODO A Modifier avec la BDD.
-        //Exemple Entreprise
-
-
-        try {
-            EntrepriseTest.put("id", "1");
-            EntrepriseTest.put("nomFournisseur", "Entreprise Test");
-            EntrepriseTest.put("domaineActivite", "Coiffeur");
-            EntrepriseTest.put("adresseF", "58 rue Faubourg Saint-Honoré");
-            EntrepriseTest.put("mail", "test@gmail.com");
-            EntrepriseTest.put("site", "testcoiffure.fr");
-            EntrepriseTest.put("description", "Ici pour tester les meilleures coiffures");
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-    }
+        List<Fournisseur> fournisseurs = genEntreprise();
+        ListView listView = (ListView) findViewById(R.id.listViewCF);
+        CEntrepriseListAdapter RDVListAdapter = new  CEntrepriseListAdapter(this,R.layout.fiche_entreprise, fournisseurs);
+        listView.setAdapter(RDVListAdapter);
+     }
 
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imageButtonContinue2:
-
-                bun.putString("Entreprise", Etest);
-                bun.putString("codeP",extras.getString("codeP"));
-                Intent cReservation_intent = new Intent(ChoixEntreprise.this, ChoixReservation.class);
-                cReservation_intent.putExtras(bun);
-                startActivity(cReservation_intent);
-                break;
+                if(fournisseur== null) {
+                    Toast.makeText(this, "Veuillez sélectionner une entreprise en cliquant sur le bouton choisir en dessous du descriptif", Toast.LENGTH_SHORT).show();
+                }else{
+                    bun.putString("Entreprise", fournisseur);
+                    bun.putString("codeP", extras.getString("codeP"));
+                    Intent cReservation_intent = new Intent(ChoixEntreprise.this, ChoixReservation.class);
+                    cReservation_intent.putExtras(bun);
+                    startActivity(cReservation_intent);
+                }
+                    break;
 
         }
     }
     public void displayEntreprise() {
+    }
+
+    private List<Fournisseur> genEntreprise(){
+        List<Fournisseur> list = new ArrayList<Fournisseur>();;
+        Fournisseur f1 = new Fournisseur("Coupt'if","890 Boulevard Louis Blanc","Les coiffeurs les plus rapides du Sud");
+        Fournisseur f2 = new Fournisseur("Mot'if","12 Route de Mende 34090 Montpellier","Les coiffuers les plus artistiques du Sud");
+        Fournisseur f3 = new Fournisseur("Couph'air","77 rue du Triolet","Les coiffeurs les plus vides du Sud");
+
+        list.add(f1);
+        list.add(f2);
+        list.add(f3);
+
+        return list;
+
+    }
+    public void myButtonTag(View view){
+        fournisseur = (String) view.getTag();
+        Toast.makeText(this, "Vous avez bien sélectionné "+fournisseur+ " comme entreprise.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Appuyez sur continuer pour poursuivre votre réservation", Toast.LENGTH_SHORT).show();
     }
 }
