@@ -58,10 +58,9 @@ public class Recapitulatif extends AppCompatActivity {
 
 
         calculPrix(EntrepriseTest);
-        try {
 
             TextView entreprise =findViewById(R.id.entreprise);
-            entreprise.setText(EntrepriseTest.getString("name"));
+            entreprise.setText(extras.getString("Entreprise"));
 
             TextView typeclient =findViewById(R.id.typeclient);
             typeclient.setText(extras.getString("typeclient"));
@@ -77,9 +76,6 @@ public class Recapitulatif extends AppCompatActivity {
 
 
 
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
     }
 
     public void onClick(View view) {
