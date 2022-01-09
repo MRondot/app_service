@@ -26,9 +26,6 @@ public class DateRdv extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_rdv);
         extras = getIntent().getExtras();
-        Toast.makeText(DateRdv.this,extras.getString("codeP"),Toast.LENGTH_SHORT).show();
-        //Toast.makeText(DateRdv.this,extras.getString("Entreprise"),Toast.LENGTH_SHORT).show();
-        //Toast.makeText(DateRdv.this,extras.getStringArrayList("prestation").get(0),Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View view) {

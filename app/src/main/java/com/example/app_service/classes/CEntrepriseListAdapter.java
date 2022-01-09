@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.app_service.R;
@@ -25,6 +26,7 @@ public class CEntrepriseListAdapter extends BaseAdapter {
             TextView adresseFView;
             TextView descriptionView;
             Button btnView;
+            ImageButton btnAvisView;
         }
 
         public CEntrepriseListAdapter(Context aContext, int layoutId, List<Fournisseur> listData) {
@@ -59,6 +61,7 @@ public class CEntrepriseListAdapter extends BaseAdapter {
                 holder.adresseFView = (TextView) convertView.findViewById(R.id.adresseFCF);
                 holder.descriptionView = (TextView) convertView.findViewById(R.id.descriptionCF);
                 holder.btnView = (Button) convertView.findViewById(R.id.chooseButtonCF);
+                holder.btnAvisView = (ImageButton) convertView.findViewById(R.id.imageButton);
                 convertView.setTag(holder);
             } else {
                 holder = (CEntrepriseListAdapter.ViewHolder) convertView.getTag();
@@ -68,6 +71,7 @@ public class CEntrepriseListAdapter extends BaseAdapter {
             holder.adresseFView.setText( fournisseur.getAdresseF());
             holder.descriptionView.setText( fournisseur.getDescription());
             holder.btnView.setTag(fournisseur.getNomFournisseur());
+            holder.btnAvisView.setTag(fournisseur.getNomFournisseur());
 
             return convertView;
 

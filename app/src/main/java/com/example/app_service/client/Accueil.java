@@ -81,6 +81,11 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
         annulation.putExtra("id_rdv",resId);
         startActivity(annulation);
     }
-
+    public void launchAvis(View view){
+        Intent Avis = new Intent(this, Avis.class );
+        String nomF = (String) view.getTag().toString();
+        Avis.putExtra("nomFournisseur",nomF);
+        startActivity(Avis);
+    }
 
 }

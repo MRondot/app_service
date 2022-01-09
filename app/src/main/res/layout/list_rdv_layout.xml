@@ -37,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/NomFournisseurLrdv"
         app:layout_constraintTop_toBottomOf="@+id/NomFournisseurLrdv"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <TextView
         android:id="@+id/prixLrdv"
@@ -100,7 +100,7 @@
         android:id="@+id/modificationButton"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="20dp"
         android:layout_marginBottom="4dp"
         android:onClick="launchModification"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
@@ -109,11 +109,20 @@
 
     <ImageButton
         android:id="@+id/deleteButton"
-        android:layout_width="46dp"
+        android:layout_width="45dp"
         android:layout_height="45dp"
         android:onClick="launchDelete"
         app:layout_constraintStart_toEndOf="@+id/modificationButton"
         app:layout_constraintTop_toTopOf="@+id/modificationButton"
         app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageButton
+        android:id="@+id/avisButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:onClick="launchAvis"
+        app:layout_constraintStart_toEndOf="@+id/deleteButton"
+        app:layout_constraintTop_toTopOf="@+id/deleteButton"
+        app:srcCompat="@android:drawable/star_big_on" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

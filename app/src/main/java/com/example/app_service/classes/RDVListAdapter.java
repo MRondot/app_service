@@ -29,6 +29,7 @@ public class RDVListAdapter extends BaseAdapter {
         TextView prestationView;
         ImageButton btnDeleteView;
         ImageButton btnModificationView;
+        ImageButton btnAvisView;
     }
 
     public RDVListAdapter(Context aContext, int layoutId, List<Rendez_vous> listData) {
@@ -66,6 +67,7 @@ public class RDVListAdapter extends BaseAdapter {
             holder.prestationView = (TextView) convertView.findViewById(R.id.prestation);
             holder.btnDeleteView = (ImageButton) convertView.findViewById(R.id.deleteButton);
             holder.btnModificationView =(ImageButton) convertView.findViewById(R.id.modificationButton);
+            holder.btnAvisView =(ImageButton) convertView.findViewById(R.id.avisButton);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
@@ -78,6 +80,7 @@ public class RDVListAdapter extends BaseAdapter {
         holder.prestationView.setText( rendez_vous.getNomPrestation());
         holder.btnDeleteView.setTag(rendez_vous.getId_rdv());
         holder.btnModificationView.setTag(rendez_vous.getId_rdv());
+        holder.btnAvisView.setTag(rendez_vous.getNomFournisseur());
 
         return convertView;
 
