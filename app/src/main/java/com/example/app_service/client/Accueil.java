@@ -33,6 +33,8 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
         bottomNavigationView.setSelectedItemId(R.id.navigation_accueil);
 
 
+
+
     }
 
     //Définition des fragments

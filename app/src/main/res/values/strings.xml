@@ -36,7 +36,7 @@
     <string name="reservation_validee">Votre réservation a bien été validée</string>
     <string name="mail_confirmation">Vous recevrez un mail de confirmation En cas d’annulation ou de report du rendez-vous.</string>
     <string name="condition_utilisation">Veuillez vous référer aux conditions d’utilisation pour toute demande d\'annulation et de remboursement</string>
-    <string name="merci_confiance">Servissimi vous remercie pour votre confiance !</string>
+    <string name="merci_confiance">Servissimo vous remercie pour votre confiance !</string>
     <string name="vos_rdv">Vos Rendez-Vous</string>
     <string name="historique">Historique</string>
     <string name="information_du_compte">Information du compte</string>
@@ -57,7 +57,7 @@
     <string name="valider">Valider</string>
     <string name="adresse_mail">Adresse mail</string>
     <string name="connexion_client">connexion client</string>
-    <string name="inscirption_pro">inscirption pro</string>
+    <string name="inscription_pro">inscription pro</string>
     <string name="inscription_client">inscription client</string>
     <string name="connexion_pro">connexion pro</string>
     <string name="mot_de_passe">Mot de passe</string>

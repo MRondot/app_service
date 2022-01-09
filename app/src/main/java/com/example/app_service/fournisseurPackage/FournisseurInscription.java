@@ -33,13 +33,12 @@ public class FournisseurInscription extends AppCompatActivity implements View.On
         Button submit=findViewById(R.id.submit);
 
         submit.setOnClickListener(this);
-    }
         //type_service.setOnClickListener(this);
-        //create_spinner_services();
+        create_spinner_services();
 
 
 
-
+    }
 
     @Override
     public void onClick(View view) {
@@ -54,7 +53,6 @@ public class FournisseurInscription extends AppCompatActivity implements View.On
         //String result= "insert into Fournisseur values(nomEntreprise,mail, tel, adresse, mdp, site_web, type_service");
     }
 
-    /*
     public void create_spinner_services(){
         List<String> services = new ArrayList<>();
         services.add("Coiffeur");
@@ -74,5 +72,5 @@ public class FournisseurInscription extends AppCompatActivity implements View.On
         // attaching data adapter to spinner
         type_service.setAdapter(dataAdapter);
 
-    }*/
+    }
 }

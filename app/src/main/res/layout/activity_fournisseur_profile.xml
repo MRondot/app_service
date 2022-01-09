@@ -94,7 +94,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView15" />
 
     <Button
-        android:id="@+id/deco_button"
+        android:id="@+id/button_deco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F9B25F"
@@ -103,7 +103,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintVertical_bias="0.87"
+        android:onClick="onClick"/>
 
     <TextView
         android:id="@+id/title_profile"
