@@ -22,6 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Votre Avis"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView18"
         app:layout_constraintEnd_toEndOf="@+id/imageView18"
         app:layout_constraintStart_toStartOf="@+id/imageView18"
@@ -53,6 +56,7 @@
         android:layout_height="48dp"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView21"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
         app:layout_constraintHorizontal_bias="0.478"
@@ -92,6 +96,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirmer votre avis"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/confirmationButton"
         app:layout_constraintEnd_toEndOf="@+id/confirmationButton"
         app:layout_constraintStart_toStartOf="@+id/confirmationButton"
@@ -127,6 +134,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginBottom="12dp"
         android:text="Votre Note : "
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/noteAvis"
         app:layout_constraintEnd_toStartOf="@+id/noteAvis"
         app:layout_constraintTop_toTopOf="@+id/noteAvis" />
@@ -137,6 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Détaillez votre avis :"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/inputAvis"
         app:layout_constraintStart_toStartOf="@+id/inputAvis" />
 

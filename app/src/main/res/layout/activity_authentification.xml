@@ -29,26 +29,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.19"
-        app:srcCompat="@drawable/carre_blanc" />
+        app:srcCompat="@drawable/carre_blanc"
+        tools:ignore="ContentDescription" />
 
     <EditText
         android:id="@+id/adresseMail"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
-        android:hint="Adresse mail"
+        android:hint="@string/adresse_mail"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintEnd_toEndOf="@+id/imageView25"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/imageView25"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintVertical_bias="0.25"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/mdp"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
-        android:text="Mot de passe"
+        android:hint="@string/mot_de_passe"
         app:layout_constraintRight_toRightOf="@+id/adresseMail"
         app:layout_constraintTop_toBottomOf="@+id/adresseMail" />
 
@@ -58,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="236dp"
         android:layout_marginTop="306dp"
-        android:text="connexion pro"
+        android:text="@string/connexion_pro"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="306dp"
-        android:text="connexion client"
+        android:text="@string/connexion_client"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -77,7 +79,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="inscirption pro"
+        android:text="@string/inscirption_pro"
         app:layout_constraintRight_toRightOf="@+id/connexion_pro"
         app:layout_constraintTop_toBottomOf="@+id/connexion_pro" />
 
@@ -86,7 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="inscription client"
+        android:text="@string/inscription_client"
         app:layout_constraintRight_toRightOf="@+id/connexion_client"
         app:layout_constraintTop_toBottomOf="@+id/connexion_client" />
 
@@ -95,8 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Bienvenue sur Servissimo"
+        android:text="@string/bienvenue_sur_servissimo"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView26"
