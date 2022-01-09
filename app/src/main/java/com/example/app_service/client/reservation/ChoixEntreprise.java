@@ -78,4 +78,14 @@ public class ChoixEntreprise extends AppCompatActivity {
         Toast.makeText(this, "Vous avez bien sélectionné "+fournisseur+ " comme entreprise.", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "Appuyez sur continuer pour poursuivre votre réservation", Toast.LENGTH_SHORT).show();
     }
+
+    public void myButtonAvis(View view){
+        Intent cAvis_intent = new Intent(this, ListeAvisReservation.class);
+        String fournisseurAvis = (String) view.getTag();
+        bun.putString("codeP", extras.getString("codeP"));
+        Toast.makeText(this, extras.getString("codeP"), Toast.LENGTH_SHORT).show();
+        bun.putString("fournisseur",fournisseurAvis);
+        cAvis_intent.putExtras(bun);
+        startActivity(cAvis_intent);
+    }
 }

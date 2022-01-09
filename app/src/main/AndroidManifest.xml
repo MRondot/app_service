@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_service">
         <activity
+            android:name=".client.reservation.ListeAvisReservation"
+            android:exported="false" />
+        <activity
+            android:name=".client.Avis"
+            android:exported="false" />
+        <activity
             android:name=".client.modification.ModificationConfirmation"
             android:exported="false" />
         <activity

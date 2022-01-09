@@ -2,16 +2,26 @@ package com.example.app_service.classes;
 
 public class AvisPost {
 
-    String description, nomPrestation, nomClient, date;
+    String description, nomPrestation, nomClient, date, nomFournisseur;
     Integer note, id_p;
 
-    public AvisPost(String description, String nomPrestation, String nomClient, String date, Integer note, Integer id_p) {
+    public AvisPost(String description, String nomClient, String date, Integer note, Integer id_p) {
         this.description = description;
-        this.nomPrestation = nomPrestation;
         this.nomClient = nomClient;
         this.date = date;
         this.note = note;
         this.id_p = id_p;
+    }
+    public AvisPost(String description,Integer note, Integer id_p){
+        this.description = description;
+        this.note = note;
+        this.id_p = id_p;
+    }
+    public AvisPost(String description,Integer note, Integer id_p, String nomFournisseur){
+        this.description = description;
+        this.note = note;
+        this.id_p = id_p;
+        this.nomFournisseur = nomFournisseur;
     }
 
     public String getDescription() {
@@ -20,14 +30,6 @@ public class AvisPost {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getNomPrestation() {
-        return nomPrestation;
-    }
-
-    public void setNomPrestation(String nomPrestation) {
-        this.nomPrestation = nomPrestation;
     }
 
     public String getNomClient() {
@@ -61,6 +63,10 @@ public class AvisPost {
     public void setId_p(Integer id_p) {
         this.id_p = id_p;
     }
+
+    public String getNomFournisseur(){return nomFournisseur;}
+
+    public void setNomFournisseur(String nomFournisseur){ this.nomFournisseur = nomFournisseur;}
 
 
 
