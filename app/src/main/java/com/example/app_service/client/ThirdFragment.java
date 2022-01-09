@@ -12,6 +12,8 @@ import com.example.app_service.R;
 
 public class ThirdFragment extends Fragment {
 
+    //Affiche le profil de l'utilisateur
+    //Layout:fragment_third
     public ThirdFragment(){
         // require a empty public constructor
     }

@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import com.example.app_service.R;
 
+//Récupération de l'adresse pour le rendez-vous
+//Layout : activity_adresse
 public class Adresse extends AppCompatActivity {
 
 
@@ -31,6 +33,7 @@ public class Adresse extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+            //Ajouts de l'adresse au bundle, et envoie pour récapitulatif
             case R.id.imageButtonContinue2:
                 Intent cAdresse_intent = new Intent(Adresse.this, Recapitulatif.class);
                 String adresse = input.getText().toString();

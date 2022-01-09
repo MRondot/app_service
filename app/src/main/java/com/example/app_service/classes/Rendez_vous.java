@@ -6,6 +6,30 @@ public class Rendez_vous {
     Integer id_rdv;
     Double prix;
 
+    //Constructeurs
+    public Rendez_vous(String rAdresse, String nomClient, String typeClient, String nomFournisseur, String nomPrestation, String heure, String date, Integer id_rdv, Double prix) {
+        this.rAdresse = rAdresse;
+        this.nomClient = nomClient;
+        this.typeClient = typeClient;
+        this.nomFournisseur = nomFournisseur;
+        this.nomPrestation = nomPrestation;
+        this.heure = heure;
+        this.date = date;
+        this.id_rdv = id_rdv;
+        this.prix = prix;
+    }
+
+    public Rendez_vous(String nomFournisseur,String date,String heure, double prix,String prestation,int id_rdv ){
+        this.nomFournisseur = nomFournisseur;
+        this.date = date;
+        this.prix = prix;
+        this.heure = heure;
+        this.nomPrestation = prestation;
+        this.id_rdv =id_rdv;
+
+    }
+
+    //Accesseurs
     public String getrAdresse() {
         return rAdresse;
     }
@@ -78,27 +102,7 @@ public class Rendez_vous {
         this.prix = prix;
     }
 
-    public Rendez_vous(String rAdresse, String nomClient, String typeClient, String nomFournisseur, String nomPrestation, String heure, String date, Integer id_rdv, Double prix) {
-        this.rAdresse = rAdresse;
-        this.nomClient = nomClient;
-        this.typeClient = typeClient;
-        this.nomFournisseur = nomFournisseur;
-        this.nomPrestation = nomPrestation;
-        this.heure = heure;
-        this.date = date;
-        this.id_rdv = id_rdv;
-        this.prix = prix;
-    }
 
-    public Rendez_vous(String nomFournisseur,String date,String heure, double prix,String prestation,int id_rdv ){
-        this.nomFournisseur = nomFournisseur;
-        this.date = date;
-        this.prix = prix;
-        this.heure = heure;
-        this.nomPrestation = prestation;
-        this.id_rdv =id_rdv;
-
-    }
 
 
 

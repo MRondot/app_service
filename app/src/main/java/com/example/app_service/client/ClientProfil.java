@@ -6,6 +6,9 @@ import android.os.Bundle;
 
 import com.example.app_service.R;
 
+
+//Affichage du profil d'un client
+//Layout:activity_client_profil
 public class ClientProfil extends AppCompatActivity {
 
 

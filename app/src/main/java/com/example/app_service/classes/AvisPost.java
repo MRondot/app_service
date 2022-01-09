@@ -5,6 +5,7 @@ public class AvisPost {
     String description, nomPrestation, nomClient, date, nomFournisseur;
     Integer note, id_p;
 
+    //Constructeur
     public AvisPost(String description, String nomClient, String date, Integer note, Integer id_p) {
         this.description = description;
         this.nomClient = nomClient;
@@ -24,6 +25,8 @@ public class AvisPost {
         this.nomFournisseur = nomFournisseur;
     }
 
+
+    //Accesseurs
     public String getDescription() {
         return description;
     }

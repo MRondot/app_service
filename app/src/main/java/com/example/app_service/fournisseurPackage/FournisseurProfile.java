@@ -9,7 +9,8 @@ import com.example.app_service.R;
 import com.example.app_service.classes.Fournisseur;
 //import com.google.firebase.firestore.FirebaseFirestore;
 
-
+//Affiche le profil d'un user Fournisseur
+//Layout:activity_fournisseur_profile
 public class FournisseurProfile extends AppCompatActivity {
     //FirebaseFirestore db = FirebaseFirestore.getInstance();
     TextView nom, Adresse, numTel, mdp, site, description;

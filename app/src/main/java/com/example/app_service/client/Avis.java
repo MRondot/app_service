@@ -16,6 +16,9 @@ import org.w3c.dom.Text;
 
 import java.util.Random;
 
+
+//Création d'un avis
+//Layout:activity_avis
 public class Avis extends AppCompatActivity {
 
 
@@ -35,7 +38,7 @@ public class Avis extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.confirmationButton:
 
-
+                //Création de l'avis
                 EditText input = (EditText)findViewById(R.id.inputAvis);
                 String desc = input.getText().toString();
                 EditText Inote = (EditText)findViewById(R.id.noteAvis);

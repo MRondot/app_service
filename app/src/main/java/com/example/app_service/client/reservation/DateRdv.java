@@ -13,6 +13,8 @@ import com.example.app_service.R;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//Récupération du choix de la date
+//Layout:activity_date_rdv
 public class DateRdv extends AppCompatActivity {
 
     Bundle bun = new Bundle();
@@ -30,6 +32,8 @@ public class DateRdv extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+
+            //Récupération de la date au sein du calendarView
             case R.id.imageButtonContinue4:
                 calendar =findViewById(R.id.calendarView);
                 selectedDate = sdf.format(new Date(calendar.getDate()));

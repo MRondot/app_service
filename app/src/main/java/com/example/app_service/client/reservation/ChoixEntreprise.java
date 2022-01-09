@@ -23,6 +23,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+//Récupération du choix de l'entreprise, avec possible envoie vers la liste des avis
+//Layout : activity_choix_entreprise
 public class ChoixEntreprise extends AppCompatActivity {
 
     String fournisseur;
@@ -44,6 +46,7 @@ public class ChoixEntreprise extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imageButtonContinue2:
+                //Valide la selection de l'entreprise en envoyant le nom de cette dernière
                 if(fournisseur== null) {
                     Toast.makeText(this, "Veuillez sélectionner une entreprise en cliquant sur le bouton choisir en dessous du descriptif", Toast.LENGTH_SHORT).show();
                 }else{
@@ -57,9 +60,8 @@ public class ChoixEntreprise extends AppCompatActivity {
 
         }
     }
-    public void displayEntreprise() {
-    }
 
+    //Génération des entreprises
     private List<Fournisseur> genEntreprise(){
         List<Fournisseur> list = new ArrayList<Fournisseur>();;
         Fournisseur f1 = new Fournisseur("Coupt'if","890 Boulevard Louis Blanc","Les coiffeurs les plus rapides du Sud");
@@ -73,12 +75,13 @@ public class ChoixEntreprise extends AppCompatActivity {
         return list;
 
     }
+    //Récupération d'une nom de l'entreprise dans la variable fournisseur, associé au bonton choisir sur chaque item de la listView
     public void myButtonTag(View view){
         fournisseur = (String) view.getTag();
         Toast.makeText(this, "Vous avez bien sélectionné "+fournisseur+ " comme entreprise.", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "Appuyez sur continuer pour poursuivre votre réservation", Toast.LENGTH_SHORT).show();
     }
-
+    //Envoie à la liste d'avis lié au fournisseur, lié au bouton étoile sur chaque item de la listView
     public void myButtonAvis(View view){
         Intent cAvis_intent = new Intent(this, ListeAvisReservation.class);
         String fournisseurAvis = (String) view.getTag();

@@ -15,6 +15,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+//Affiche le récapitulatif et la confirmation d'une prise de RDV
+//Layout:activity_recapitulatif
 public class Recapitulatif extends AppCompatActivity {
 
 
@@ -32,8 +34,8 @@ public class Recapitulatif extends AppCompatActivity {
         setContentView(R.layout.activity_recapitulatif);
         extras = getIntent().getExtras();
 
-        //A Modifier avec la BDD.
-        //Exemple Entreprise
+
+        //Génération des tarifs pour une entreprise
         JSONObject EntrepriseTest = new JSONObject();
         try {
             EntrepriseTest.put("id", "3");
@@ -52,9 +54,6 @@ public class Recapitulatif extends AppCompatActivity {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-
-
-
 
 
         calculPrix(EntrepriseTest);
@@ -83,8 +82,7 @@ public class Recapitulatif extends AppCompatActivity {
             case R.id.imageButtonContinue2:
                 Intent cValidation_intent = new Intent(Recapitulatif.this, Validation.class);
 
-                //TODO Renvoie des données pour match avec la classe Rendez_vous
-
+                //Récupération des données sous la forme d'un objet java
 
                 //Rendez_Vous rdv = new Rendez_vous
                 // (
@@ -119,7 +117,7 @@ public class Recapitulatif extends AppCompatActivity {
 
 
     //Utilise un fichier JSON pour les données de l'entreprise/service
-    //A modifier avec la BDD
+    //Récupération des tarifs des prestations
     public void calculPrix(JSONObject EntrepriseTest) {
         if (extras.getString("typeclient").equals("homme")) {
             try {
@@ -147,7 +145,7 @@ public class Recapitulatif extends AppCompatActivity {
             }
         }
         ArrayList<String> prestation = extras.getStringArrayList("prestation");
-
+        //Calcul du prix
         if (prestation.contains("coupe")) {
             TextView coupe =findViewById(R.id.coupe);
             coupe.setText("Coupe");

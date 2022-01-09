@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import com.example.app_service.R;
 
 
+//Fragment affichant les élements de la page d'accueil, choix du domaine pour le service
+//Layout: fragment_blank
     public class FirstFragment extends Fragment {
 
         public FirstFragment(){

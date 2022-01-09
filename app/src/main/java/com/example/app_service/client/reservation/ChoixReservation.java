@@ -12,6 +12,8 @@ import com.example.app_service.R;
 
 import java.util.ArrayList;
 
+//Récupération de la prestation et du type de client.
+//Layout:activity_choix_reservation
 public class ChoixReservation extends AppCompatActivity {
 
     Bundle bun = new Bundle();
@@ -44,6 +46,8 @@ public class ChoixReservation extends AppCompatActivity {
                 shampoing = findViewById(R.id.CB_shampoing);
                 prestation = new ArrayList<>();
 
+
+                //Détermination de la prestation en récupérant les données depuis les checkView
                 if(homme.isChecked()){
                     bun.putString("typeclient","homme");
                 }else if(femme.isChecked()){
@@ -65,7 +69,7 @@ public class ChoixReservation extends AppCompatActivity {
                 bun.putString("codeP",extras.getString("codeP"));
                 bun.putStringArrayList("prestation",prestation);
 
-
+                //Envoie du type de client et de la prestation
                 if(bun.getString("typeclient")!=null || bun.getString("prestation")!=null) {
                     Intent cDateRdv_intent = new Intent(ChoixReservation.this, DateRdv.class);
                     cDateRdv_intent.putExtras(bun);

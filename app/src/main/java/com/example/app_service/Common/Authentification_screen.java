@@ -15,7 +15,8 @@ import com.example.app_service.client.ClientInscription;
 import com.example.app_service.fournisseurPackage.FournisseurInscription;
 //import com.google.firebase.auth.FirebaseAuth;
 
-
+//Ecran de démarrage de l'application, renvoie vers les différentes parties de l'application, fournisseurs ou clients
+//Layout:activity_authentification
 public class Authentification_screen extends AppCompatActivity implements View.OnClickListener {
 
 

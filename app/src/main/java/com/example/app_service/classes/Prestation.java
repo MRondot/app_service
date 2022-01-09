@@ -6,6 +6,7 @@ public class Prestation {
     Boolean mobilite;
     Double accompte, prix;
 
+    //Constructeur
     public Prestation(String nomPrestation, String description, String nomFournisseur, Boolean mobilite, Double accompte, Double prix) {
         this.nomPrestation = nomPrestation;
         this.description = description;
@@ -15,6 +16,7 @@ public class Prestation {
         this.prix = prix;
     }
 
+    //Accesseur
     public String getNomPrestation() {
         return nomPrestation;
     }

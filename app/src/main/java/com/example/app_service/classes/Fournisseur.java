@@ -6,6 +6,7 @@ public class Fournisseur {
     Integer numRCS, numTel;
     Double note;
 
+    //Constructeurs
     public Fournisseur(String nomFournisseur, String domaineActivite, String adresseF, String mail, String site, String mdp, String description, String avis, Integer numRCS, Integer numTel, Double note) {
         this.nomFournisseur = nomFournisseur;
         this.domaineActivite = domaineActivite;
@@ -38,6 +39,7 @@ public class Fournisseur {
 
     }
 
+    //Accesseurs
     public String getNomFournisseur() {
         return nomFournisseur;
     }

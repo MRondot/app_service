@@ -18,6 +18,8 @@ import com.example.app_service.classes.Fournisseur;
 import java.util.ArrayList;
 import java.util.List;
 
+//Affiche une liste d'avis à propos d'un fournisseur sélectionné
+//Layout:activity_liste_avis_reservation; fiche_avis
 public class ListeAvisReservation extends AppCompatActivity {
 
     Bundle extras;
@@ -29,12 +31,16 @@ public class ListeAvisReservation extends AppCompatActivity {
         setContentView(R.layout.activity_liste_avis_reservation);
         extras = getIntent().getExtras();
 
-
+        //Récupération du nom du fournisseur
         TextView titre = (TextView) findViewById(R.id.textView4);
         String Nfournisseur = extras.getString("fournisseur");
         titre.setText(Nfournisseur);
 
+
+        //Génération avis
         List<AvisPost> avis = genAvis();
+
+        //Sélection des avis concernant le fournisseur sélectionné dans une liste
         List<AvisPost> avisSelec = new ArrayList<>();
         for( AvisPost aviss : avis){
             if(aviss.getNomFournisseur().equals(Nfournisseur)){
@@ -42,6 +48,7 @@ public class ListeAvisReservation extends AppCompatActivity {
             }
 
         }
+        //Utilisation de AvisListAdapter pour une permettre une exploitation et un affichage des données concernant ces avs
         ListView listView = (ListView) findViewById(R.id.listViewCF);
         AvisListAdapter AvisListAdapter = new  AvisListAdapter(this,R.layout.fiche_avis, avisSelec);
         listView.setAdapter(AvisListAdapter);
@@ -49,6 +56,8 @@ public class ListeAvisReservation extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+
+            //Renvoie au choix de l'entreprise
             case R.id.imageButtonLAvis:
                 Intent cEntreprise_intent = new Intent(this, ChoixEntreprise.class);
                 extras = getIntent().getExtras();
@@ -59,7 +68,7 @@ public class ListeAvisReservation extends AppCompatActivity {
         }
     }
 
-
+    //Génération des avis
     private List<AvisPost> genAvis(){
         List<AvisPost> list = new ArrayList<AvisPost>();;
         AvisPost a1 = new AvisPost("Super ! ",4,3,"Mot'if");

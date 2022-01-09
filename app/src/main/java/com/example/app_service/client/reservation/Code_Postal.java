@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import com.example.app_service.R;
 
+
+//Récupération du code postal
+//Layout:activity_code_postal
 public class Code_Postal extends AppCompatActivity {
 
     Bundle bun = new Bundle();
@@ -28,6 +31,7 @@ public class Code_Postal extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+            //Envoie du code postal
             case R.id.imageButtonContinue:
                 String codeP = input.getText().toString();
                 if (codeP.length() == 5)  {

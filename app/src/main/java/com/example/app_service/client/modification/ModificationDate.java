@@ -15,6 +15,8 @@ import com.example.app_service.client.reservation.HoraireRdv;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+//Modification de la date
+//Layout:activity_modification_date
 public class ModificationDate extends AppCompatActivity {
 
     Bundle bun = new Bundle();
@@ -31,8 +33,11 @@ public class ModificationDate extends AppCompatActivity {
 
     }
 
+
     public void onClick(View view) {
         switch (view.getId()) {
+
+            //Sauvegarde de la date, et envoie à la sélection d'un horaire
             case R.id.imageButtonContinue4:
                 calendar =findViewById(R.id.calendarView);
                 selectedDate = sdf.format(new Date(calendar.getDate()));

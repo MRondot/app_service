@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+//Affiche les différents rendez-vous pris par l'utilisateur
+//Layout:fragment_second
 public class SecondFragment extends Fragment {
 
 
@@ -43,6 +45,8 @@ public class SecondFragment extends Fragment {
 
 
         }
+
+        //Génération des rendez-vous
         public List<Rendez_vous> getListData() {
                 List<Rendez_vous> list = new ArrayList<Rendez_vous>();
                 Rendez_vous r1 = new Rendez_vous("Coup t'if", "21/05/22", "12.30",23,"coupe",3);

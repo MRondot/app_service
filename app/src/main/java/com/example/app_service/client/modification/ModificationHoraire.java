@@ -14,6 +14,8 @@ import com.example.app_service.R;
 import com.example.app_service.client.reservation.Adresse;
 import com.example.app_service.client.reservation.HoraireRdv;
 
+//Modification de l'horaire
+//Layout :activity_modification_horaire; horaire
 public class ModificationHoraire extends AppCompatActivity {
 
     String[] lhoraire = {"8h00","8h30","9h00","9h30","10h00","10h30","11h00","11h30","12h00","12h30","13h00","13h30","14h00","14h30","15h00","15h30","16h00","16h30","17h00","17h30"};
@@ -33,6 +35,7 @@ public class ModificationHoraire extends AppCompatActivity {
 
     public void onClick(View view) {
         switch (view.getId()) {
+            //Sauvregarde de l'horaire, et envoie des modifications pour confirmation
             case R.id.imageButtonContinue5:
                 Intent confirmationModif = new Intent(this, ModificationConfirmation.class);
 

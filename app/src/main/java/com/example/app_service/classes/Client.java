@@ -5,6 +5,17 @@ public class Client {
     String nomC, prenom, adresse, mail, mdp;
     Integer age;
 
+    //Constructeur
+    public Client(String nomC, String prenom, String adresse, String mail, String mdp, Integer age, Integer id_c) {
+        this.nomC = nomC;
+        this.prenom = prenom;
+        this.adresse = adresse;
+        this.mail = mail;
+        this.mdp = mdp;
+        this.age = age;
+        this.id_c = id_c;
+    }
+    //Accesseurs
     public String getNomC() {
         return nomC;
     }
@@ -63,15 +74,6 @@ public class Client {
 
 
 
-    public Client(String nomC, String prenom, String adresse, String mail, String mdp, Integer age, Integer id_c) {
-        this.nomC = nomC;
-        this.prenom = prenom;
-        this.adresse = adresse;
-        this.mail = mail;
-        this.mdp = mdp;
-        this.age = age;
-        this.id_c = id_c;
-    }
 
     Integer id_c;
 }

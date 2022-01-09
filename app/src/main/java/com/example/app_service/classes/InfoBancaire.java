@@ -1,15 +1,22 @@
 package com.example.app_service.classes;
 
+
+//Non utilisé
 public class InfoBancaire {
+
 
     String IBAN, nomBanque, nomFournisseur;
 
+
+    //Constructeur
     public InfoBancaire(String IBAN, String nomBanque, String nomFournisseur) {
         this.IBAN = IBAN;
         this.nomBanque = nomBanque;
         this.nomFournisseur = nomFournisseur;
     }
 
+
+    //Accesseurs
     public String getIBAN() {
         return IBAN;
     }

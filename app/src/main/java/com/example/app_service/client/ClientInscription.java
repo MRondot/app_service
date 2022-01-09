@@ -12,6 +12,9 @@ import android.widget.Toast;
 import com.example.app_service.R;
 import com.example.app_service.client.modification.Annulation;
 
+
+//Permet l'inscription d'un client
+//Layout : activity_client_inscription
 public class ClientInscription extends AppCompatActivity {
 
 
@@ -30,6 +33,7 @@ public class ClientInscription extends AppCompatActivity {
 
     public void OnClick(View view) {
         switch (view.getId()) {
+            //Validation de l'inscription
             case R.id.button_valide_inscript_client:
                 Toast.makeText(this, "Vous êtes bien inscrit!", Toast.LENGTH_LONG).show();
                 //String result ="insert into Client values (nom_c, prenom_c, mdp_c, mail_c, num_c)";

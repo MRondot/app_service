@@ -14,13 +14,17 @@ import com.example.app_service.R;
 
 import java.util.List;
 
+//Adapter pour la liste de rendez-vous, depuis Accueil
 public class RDVListAdapter extends BaseAdapter {
 
+    //Liste des données concernant les rendez-vous.
     private List<Rendez_vous> listData;
+
     private LayoutInflater layoutInflater;
     private Context context;
     private int layoutId;
 
+    //Conservation des données grâce à un Holder
     static class ViewHolder {
         TextView nomEntrepriseView;
         TextView prixView;
@@ -31,7 +35,7 @@ public class RDVListAdapter extends BaseAdapter {
         ImageButton btnModificationView;
         ImageButton btnAvisView;
     }
-
+    //Constructeur
     public RDVListAdapter(Context aContext, int layoutId, List<Rendez_vous> listData) {
         this.context = aContext;
         this.listData = listData;
@@ -57,6 +61,7 @@ public class RDVListAdapter extends BaseAdapter {
 
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
+        //Identification des views qui seront utilisées.
         if (convertView == null) {
             convertView = layoutInflater.inflate(layoutId, parent, false);
             holder = new ViewHolder();
@@ -72,7 +77,10 @@ public class RDVListAdapter extends BaseAdapter {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
+        //Récupération des données sur un rendez-vous.
         Rendez_vous rendez_vous = this.listData.get(position);
+
+        //Ajout des données dans les views
         holder.nomEntrepriseView.setText(rendez_vous.getNomFournisseur());
         holder.horaireView.setText( rendez_vous.getHeure());
         holder.prixView.setText( rendez_vous.getPrix().toString());
