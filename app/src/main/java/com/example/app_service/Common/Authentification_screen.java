@@ -16,7 +16,7 @@ import com.example.app_service.client.Accueil;
 import com.example.app_service.client.ClientInscription;
 import com.example.app_service.fournisseurPackage.FournisseurInscription;
 import com.example.app_service.fournisseurPackage.FournisseurProfile;
-//import com.google.firebase.auth.FirebaseAuth;
+
 
 //Ecran de démarrage de l'application, renvoie vers les différentes parties de l'application, fournisseurs ou clients
 //Layout:activity_authentification
@@ -26,8 +26,6 @@ public class Authentification_screen extends AppCompatActivity implements View.O
     Client Karim= new Client("Karim", "karim@test.com", "c");
     Fournisseur JeanNoel= new Fournisseur("JeanNoel", "JN@test.com","c","C'est le fournisseur test");
 
-
-    Button connexion_pro, connexion_client, inscripton_pro, inscription_client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
