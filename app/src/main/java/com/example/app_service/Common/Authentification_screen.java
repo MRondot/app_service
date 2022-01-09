@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.app_service.R;
+import com.example.app_service.client.Accueil;
 import com.example.app_service.client.ClientInscription;
 import com.example.app_service.fournisseurPackage.FournisseurInscription;
 //import com.google.firebase.auth.FirebaseAuth;
@@ -45,14 +46,15 @@ public class Authentification_screen extends AppCompatActivity implements View.O
         switch (view.getId()){
             case R.id.connexion_pro:
                 //if(verif couple mail et mdp existe dans la base de données en tant que Fournisseur)
-                Toast myToast = Toast.makeText(this, "lance la connexion pro", Toast.LENGTH_LONG);
-                myToast.show();
+                Toast.makeText(this, "lance la connexion pro", Toast.LENGTH_LONG).show();
+
                 //else Toast.makeText(this, "Ce couple adresse mail et mot de passe est erroné !", Toast.LENGTH_LONG).show();
                 break;
             case R.id.connexion_client:
                 //if(verif couple mail et mdp existe dans la base de données en tant que Client)
-                Toast myToast2 = Toast.makeText(this, "lance la connexion client", Toast.LENGTH_LONG);
-                myToast2.show();
+                Intent Accueil = new Intent(Authentification_screen.this, com.example.app_service.client.Accueil.class);
+                startActivity(Accueil);
+                Toast.makeText(this, "Vous êtes bien connecté !", Toast.LENGTH_LONG).show();
                 //else Toast.makeText(this, "Ce couple adresse mail et mot de passe est erroné !", Toast.LENGTH_LONG).show();
                 break;
             case R.id.inscription_pro:
