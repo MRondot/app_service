@@ -61,8 +61,8 @@
         android:id="@+id/imageView11"
         android:layout_width="347dp"
         android:layout_height="323dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/carre_blanc"
@@ -72,61 +72,62 @@
         android:id="@+id/typeclient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginTop="152dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/coupe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginTop="228dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        android:layout_marginTop="224dp"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/shampoing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="196dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/coloration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="228dp"
-        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/prix"
         android:layout_width="0dp"
         android:layout_height="30sp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="120dp"
+        android:text="oui"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
         android:id="@+id/entreprise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="120dp"
+        android:text="text"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
     <TextView
@@ -134,7 +135,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="88dp"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
@@ -182,6 +183,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/date_et_horaire"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView14"
         app:layout_constraintTop_toTopOf="@+id/imageView14" />
 
@@ -193,6 +195,7 @@
         android:layout_marginTop="64dp"
         android:text="@string/adresse_du_rendez_vous"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
@@ -200,10 +203,11 @@
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
         android:text="@string/prestation"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
@@ -211,11 +215,13 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="104dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="128dp"
         android:text="@string/prix"
         android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/entreprise"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
