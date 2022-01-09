@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
+import com.example.app_service.Common.Authentification_screen;
 import com.example.app_service.R;
 import com.example.app_service.client.modification.Annulation;
 import com.example.app_service.client.modification.ModificationDate;
@@ -13,6 +15,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.w3c.dom.Text;
 
 
 //Pages d'acceuil, s'articule autour de 3 fragments, utilisation de la barre de navigation
@@ -31,7 +35,6 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
 
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         bottomNavigationView.setSelectedItemId(R.id.navigation_accueil);
-
 
 
 
@@ -62,6 +65,8 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
         return false;
     }
 
+
+
     public void onClick(View view) {
         switch (view.getId()) {
             //Lancement de la procedure de réservation avec le code postal
@@ -70,6 +75,7 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
                 Intent cPostal_intent = new Intent(Accueil.this, Code_Postal.class);
                 startActivity(cPostal_intent);
                 break;
+
         }
 
 
@@ -97,5 +103,10 @@ public class Accueil extends AppCompatActivity  implements BottomNavigationView.
         Avis.putExtra("nomFournisseur",nomF);
         startActivity(Avis);
     }
+
+/*    public void deconnexion(){
+        Intent deco_intent = new Intent(this, Authentification_screen.class);
+        startActivity(deco_intent);
+    }*/
 
 }

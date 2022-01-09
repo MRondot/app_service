@@ -10,25 +10,29 @@
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_adresse.xml" value="0.24010416666666667" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_annulation.xml" value="0.2" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_annulation2.xml" value="0.23958333333333334" />
-        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_authentification.xml" value="0.264" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_authentification.xml" value="0.176" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_authentification2.xml" value="0.2269021739130435" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_avis.xml" value="0.23143115942028986" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_choix_entreprise.xml" value="0.24010416666666667" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_choix_reservation.xml" value="0.24010416666666667" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_client_inscription.xml" value="0.264" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_client_profil.xml" value="0.264" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_code_postal.xml" value="0.24682971014492755" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_date_rdv.xml" value="0.24682971014492755" />
-        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_fournisseur_inscription.xml" value="0.4" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_fournisseur_inscription.xml" value="0.264" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_fournisseur_profile.xml" value="0.264" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_list_rdv.xml" value="0.24010416666666667" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_liste_resa.xml" value="0.4" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_modif_reservation.xml" value="0.24320652173913043" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_modification_confirmation.xml" value="0.2269021739130435" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/content_client_inscription.xml" value="0.24320652173913043" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/fragment_first.xml" value="0.24320652173913043" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/fragment_second.xml" value="0.2368659420289855" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/fragment_second2.xml" value="0.24320652173913043" />
         <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/fragment_third.xml" value="0.23596014492753623" />
+        <entry key="..\:/M2_IPS/Master 2/Prog mobile/app_service/app/src/main/res/layout/list_rdv_layout.xml" value="0.13020833333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35052083333333334" />
       </map>
     </option>

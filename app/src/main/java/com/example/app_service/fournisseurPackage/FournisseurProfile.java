@@ -37,12 +37,12 @@ public class FournisseurProfile extends AppCompatActivity {
 
     private void AfficheDonnees() { // à remplir à partir des données de la bdd
 
-        nom.setText("Manu");
-        Adresse.setText("7 rue du général manu");
-        numTel.setText("06 50 80 46 79");
-        mdp.setText("jesuisunmdp");
-        site.setText("www.settext.com");
-        description.setText("C'est un service vraiment sympa!");
+        nom.setText("Nom: "+"Manu");
+        Adresse.setText("Adresse: "+"7 rue du général manu");
+        numTel.setText("Numéro de Téléphone: "+"06 50 80 46 79");
+        mdp.setText("Mot de Passe: "+"jesuisunmdp");
+        site.setText("Site Web: "+"www.settext.com");
+        description.setText("Description: "+"C'est un service vraiment sympa!");
 
     }
 
