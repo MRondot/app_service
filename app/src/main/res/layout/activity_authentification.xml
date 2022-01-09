@@ -1,67 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fournisseurPackage.Authentification_screen" >
+    android:background="#BFBDBD"
+    tools:context=".Common.Authentification_screen">
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/rectangle_blanc"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="388dp"
+        android:layout_height="174dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        app:srcCompat="@drawable/carre_blanc" />
 
     <EditText
         android:id="@+id/adresseMail"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="94dp"
-        android:layout_marginTop="131dp"
-        android:text="TextView" />
+        android:text="adresseMail"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView25"
+        app:layout_constraintEnd_toEndOf="@+id/imageView25"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView25"
+        app:layout_constraintTop_toTopOf="@+id/imageView25"
+        app:layout_constraintVertical_bias="0.25" />
 
     <EditText
         android:id="@+id/mdp"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/adresseMail"
         android:layout_marginTop="19dp"
-        android:layout_alignRight="@+id/adresseMail"
-        android:text="test" />
+        android:text="Mot de passe"
+        app:layout_constraintRight_toRightOf="@+id/adresseMail"
+        app:layout_constraintTop_toBottomOf="@+id/adresseMail" />
 
     <Button
         android:id="@+id/connexion_pro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginLeft="236dp"
         android:layout_marginTop="306dp"
-        android:text="connexion pro" />
+        android:text="connexion pro"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/connexion_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:layout_marginLeft="31dp"
         android:layout_marginTop="306dp"
-        android:text="connexion client" />
+        android:text="connexion client"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/inscription_pro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/connexion_pro"
-        android:layout_alignRight="@+id/connexion_pro"
         android:layout_marginTop="40dp"
-        android:text="inscirption pro" />
+        android:text="inscirption pro"
+        app:layout_constraintRight_toRightOf="@+id/connexion_pro"
+        app:layout_constraintTop_toBottomOf="@+id/connexion_pro" />
 
     <Button
         android:id="@+id/inscription_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/connexion_client"
-        android:layout_alignRight="@+id/connexion_client"
         android:layout_marginTop="40dp"
-        android:text="inscription client" />
+        android:text="inscription client"
+        app:layout_constraintRight_toRightOf="@+id/connexion_client"
+        app:layout_constraintTop_toBottomOf="@+id/connexion_client" />
+
+    <TextView
+        android:id="@+id/titlescreen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Bienvenue sur Servissimo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView26"
+        app:layout_constraintEnd_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toStartOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="@+id/imageView26" />
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
