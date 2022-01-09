@@ -74,10 +74,10 @@
         android:textAlignment="gravity"
         app:layout_constraintBottom_toBottomOf="@+id/imageView19"
         app:layout_constraintEnd_toEndOf="@+id/imageView19"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="@+id/imageView19"
         app:layout_constraintTop_toTopOf="@+id/imageView19"
-        app:layout_constraintVertical_bias="0.519" />
+        app:layout_constraintVertical_bias="0.535" />
 
     <ImageButton
         android:id="@+id/confirmationButton"
