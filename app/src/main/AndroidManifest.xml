@@ -60,7 +60,7 @@
             android:name=".fournisseurPackage.FournisseurInscription"
             android:exported="false" />
         <activity
-            android:name=".fournisseurPackage.Authentification_screen"
+            android:name=".Common.Authentification_screen"
             android:exported="false" />
         <activity
             android:name=".fournisseurPackage.liste_resa"

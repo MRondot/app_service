@@ -11,8 +11,6 @@ import android.widget.Toast;
 
 import com.example.app_service.R;
 import com.example.app_service.client.Accueil;
-import com.example.app_service.fournisseurPackage.Authentification_screen;
-import com.example.app_service.fournisseurPackage.FournisseurInscription;
 
 public class Annulation extends AppCompatActivity {
 
@@ -26,7 +24,6 @@ public class Annulation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_annulation);
 
-        // need test
         Bundle bundle = getIntent().getExtras();
         String id_rdv= bundle.getString("id_rdv");
 
