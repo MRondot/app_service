@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.example.app_service.R;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 
@@ -30,6 +32,7 @@ public class AvisListAdapter extends BaseAdapter {
     static class ViewHolder {
         TextView descriptionView;
         TextView noteView;
+        TextView nomClientView;
 
     }
     //Constructeur
@@ -65,6 +68,7 @@ public class AvisListAdapter extends BaseAdapter {
             holder = new AvisListAdapter.ViewHolder();
             holder.descriptionView = (TextView) convertView.findViewById(R.id.DescriptionAvis);
             holder.noteView = (TextView) convertView.findViewById(R.id.FAvisNote);
+            holder.nomClientView =(TextView) convertView.findViewById(R.id.Avis_nom_client);
 
             convertView.setTag(holder);
         } else {
@@ -75,6 +79,7 @@ public class AvisListAdapter extends BaseAdapter {
         //Ajout des données dans les views
         holder.descriptionView.setText( avis.getDescription());
         holder.noteView.setText(avis.getNote().toString() + "/5");
+        holder.nomClientView.setText(avis.getNomClient());
 
 
         return convertView;

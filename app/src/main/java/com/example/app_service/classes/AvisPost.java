@@ -17,12 +17,14 @@ public class AvisPost {
         this.description = description;
         this.note = note;
         this.id_p = id_p;
+
     }
-    public AvisPost(String description,Integer note, Integer id_p, String nomFournisseur){
+    public AvisPost(String description,Integer note, Integer id_p, String nomFournisseur,String nomClient){
         this.description = description;
         this.note = note;
         this.id_p = id_p;
         this.nomFournisseur = nomFournisseur;
+        this.nomClient= nomClient;
     }
 
 

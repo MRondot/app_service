@@ -71,12 +71,12 @@ public class ListeAvisReservation extends AppCompatActivity {
     //Génération des avis
     private List<AvisPost> genAvis(){
         List<AvisPost> list = new ArrayList<AvisPost>();;
-        AvisPost a1 = new AvisPost("Super ! ",4,3,"Mot'if");
-        AvisPost a2 = new AvisPost("Pas fou..",2,8,"Coupt'if");
-        AvisPost a3 = new AvisPost("Déco de mauvais gout !",3,7,"Coupt'if");
-        AvisPost a4 = new AvisPost("A éviter, peu agréable",1,5,"Mot'if");
-        AvisPost a5 = new AvisPost("Très aimable, je recommande",4,3,"Couph'air");
-        AvisPost a6 = new AvisPost("Les meilleurs ! J'y vais 3 fois par semaine !",5,1,"Couph'air");
+        AvisPost a1 = new AvisPost("Super ! ",4,3,"Mot'if", "Roger");
+        AvisPost a2 = new AvisPost("Pas fou..",2,8,"Coupt'if", "Djamel");
+        AvisPost a3 = new AvisPost("Déco de mauvais gout !",3,7,"Coupt'if", "Karim");
+        AvisPost a4 = new AvisPost("A éviter, peu agréable",1,5,"Mot'if", "Sandra");
+        AvisPost a5 = new AvisPost("Très aimable, je recommande",4,3,"Couph'air", "Lorenzo");
+        AvisPost a6 = new AvisPost("Les meilleurs ! J'y vais 3 fois par semaine !",5,1,"Couph'air", "Maxence");
 
         list.add(a1);
         list.add(a2);
