@@ -54,9 +54,6 @@
             android:exported="false"
             android:label="@string/title_Reservation" />
         <activity
-            android:name=".client.Profile"
-            android:exported="false" />
-        <activity
             android:name=".fournisseurPackage.FournisseurInscription"
             android:exported="false" />
         <activity

@@ -65,7 +65,7 @@ public class Recapitulatif extends AppCompatActivity {
             TextView typeclient =findViewById(R.id.typeclient);
             typeclient.setText(extras.getString("typeclient"));
 
-            TextView Adresse =findViewById(R.id.Adresse);
+            TextView Adresse =findViewById(R.id.ClientPrenom);
             Adresse.setText(extras.getString("adresse"));
 
             TextView date =findViewById(R.id.date);

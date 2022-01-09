@@ -19,12 +19,12 @@ public class FournisseurProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fournisseur_profile);
-        nom= findViewById(R.id.NomFournisseur);
-        Adresse= findViewById(R.id.Adresse);
+        nom= findViewById(R.id.ClientNom);
+        Adresse= findViewById(R.id.ClientPrenom);
         numTel= findViewById(R.id.NumTel);
-        mdp=findViewById(R.id.Mdp);
-        site=findViewById(R.id.Site);
-        description=findViewById(R.id.Description);
+        mdp=findViewById(R.id.ClientMdp);
+        site=findViewById(R.id.ClientNum);
+        description=findViewById(R.id.ClientMail);
 
         fournisseur= new Fournisseur();
         AfficheDonnees();
