@@ -13,6 +13,7 @@ import com.example.app_service.R;
 import com.example.app_service.client.Accueil;
 import com.example.app_service.client.ClientInscription;
 import com.example.app_service.fournisseurPackage.FournisseurInscription;
+import com.example.app_service.fournisseurPackage.FournisseurProfile;
 //import com.google.firebase.auth.FirebaseAuth;
 
 //Ecran de démarrage de l'application, renvoie vers les différentes parties de l'application, fournisseurs ou clients
@@ -48,7 +49,8 @@ public class Authentification_screen extends AppCompatActivity implements View.O
             case R.id.connexion_pro:
                 //if(verif couple mail et mdp existe dans la base de données en tant que Fournisseur)
                 Toast.makeText(this, "lance la connexion pro", Toast.LENGTH_LONG).show();
-
+                Intent intent_connection_client = new Intent(Authentification_screen.this, FournisseurProfile.class);
+                startActivity(intent_connection_client);
                 //else Toast.makeText(this, "Ce couple adresse mail et mot de passe est erroné !", Toast.LENGTH_LONG).show();
                 break;
             case R.id.connexion_client:
