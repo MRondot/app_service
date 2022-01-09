@@ -64,9 +64,9 @@ public class ChoixEntreprise extends AppCompatActivity {
     //Génération des entreprises
     private List<Fournisseur> genEntreprise(){
         List<Fournisseur> list = new ArrayList<Fournisseur>();;
-        Fournisseur f1 = new Fournisseur("Coupt'if","890 Boulevard Louis Blanc","Les coiffeurs les plus rapides du Sud");
+        Fournisseur f1 = new Fournisseur("Coupt'if","890 Boulevard Louis Blanc 34090 Montpellier","Les coiffeurs les plus rapides du Sud");
         Fournisseur f2 = new Fournisseur("Mot'if","12 Route de Mende 34090 Montpellier","Les coiffuers les plus artistiques du Sud");
-        Fournisseur f3 = new Fournisseur("Couph'air","77 rue du Triolet","Les coiffeurs les plus vides du Sud");
+        Fournisseur f3 = new Fournisseur("Couph'air","77 rue du Triolet 34090 Montpellier","Les coiffeurs les plus vides du Sud");
 
         list.add(f1);
         list.add(f2);

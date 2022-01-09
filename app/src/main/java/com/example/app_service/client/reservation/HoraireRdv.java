@@ -55,8 +55,10 @@ public class HoraireRdv extends AppCompatActivity {
                 break;
 
             case R.id.horaire:
+
                 TextView s =view.findViewById(R.id.horaire);
                  horaire=s.getText().toString();
+                Toast.makeText(HoraireRdv.this, "Vous avez sélectionné " +horaire+" comme horaire", Toast.LENGTH_SHORT).show();
                 break;
         }
     }

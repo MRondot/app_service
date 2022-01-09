@@ -20,9 +20,7 @@ import com.example.app_service.fournisseurPackage.FournisseurProfile;
 //Layout:activity_authentification
 public class Authentification_screen extends AppCompatActivity implements View.OnClickListener {
 
-
     Button connexion_pro, connexion_client, inscripton_pro, inscription_client;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
