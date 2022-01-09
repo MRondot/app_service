@@ -61,7 +61,6 @@ public class ListeAvisReservation extends AppCompatActivity {
             case R.id.imageButtonLAvis:
                 Intent cEntreprise_intent = new Intent(this, ChoixEntreprise.class);
                 extras = getIntent().getExtras();
-                Toast.makeText(this, extras.getString("codeP"), Toast.LENGTH_SHORT).show();
                 bun.putString("codeP", extras.getString("codeP"));
                 cEntreprise_intent.putExtras(bun);
                 startActivity(cEntreprise_intent);

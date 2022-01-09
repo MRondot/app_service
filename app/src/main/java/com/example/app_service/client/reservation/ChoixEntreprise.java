@@ -86,7 +86,7 @@ public class ChoixEntreprise extends AppCompatActivity {
         Intent cAvis_intent = new Intent(this, ListeAvisReservation.class);
         String fournisseurAvis = (String) view.getTag();
         bun.putString("codeP", extras.getString("codeP"));
-        Toast.makeText(this, extras.getString("codeP"), Toast.LENGTH_SHORT).show();
+
         bun.putString("fournisseur",fournisseurAvis);
         cAvis_intent.putExtras(bun);
         startActivity(cAvis_intent);
