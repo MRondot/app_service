@@ -33,7 +33,7 @@ public class FournisseurInscription extends AppCompatActivity implements View.On
         Button submit=findViewById(R.id.submit);
 
         submit.setOnClickListener(this);
-        type_service.setOnClickListener(this);
+        //type_service.setOnClickListener(this);
         create_spinner_services();
 
 
@@ -50,7 +50,7 @@ public class FournisseurInscription extends AppCompatActivity implements View.On
     }
 
     private void inscriptionFournisseur() {
-
+        //String result= "insert into Fournisseur values(nomEntreprise,mail, tel, adresse, mdp, site_web, type_service");
     }
 
     public void create_spinner_services(){
