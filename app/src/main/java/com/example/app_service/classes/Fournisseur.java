@@ -26,6 +26,13 @@ public class Fournisseur {
         this.description = description;
     }
 
+    public Fournisseur(String nomFournisseur, String mail, String mdp, String description) {
+        this.nomFournisseur = nomFournisseur;
+        this.mail = mail;
+        this.mdp = mdp;
+        this.description = description;
+    }
+
     public Fournisseur(){
 
     }
