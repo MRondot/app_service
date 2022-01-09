@@ -16,23 +16,21 @@ import java.util.List;
 
 public class FournisseurInscription extends AppCompatActivity implements View.OnClickListener {
 
-    EditText nomEntreprise, mail, tel, adresse, mdp, site_web;
     Spinner type_service;
-    Button submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fournisseur_inscription);
 
-        nomEntreprise.findViewById(R.id.nomEntreprise);
-        mail.findViewById(R.id.mail);
-        tel.findViewById(R.id.tel);
-        adresse.findViewById(R.id.adresse);
-        mdp.findViewById(R.id.mdp_inscription);
-        site_web.findViewById(R.id.site_web);
-        type_service.findViewById(R.id.list_service);
-        submit.findViewById(R.id.submit);
+        EditText nomEntreprise=findViewById(R.id.nomEntreprise);
+        EditText mail= findViewById(R.id.mail);
+        EditText tel=findViewById(R.id.tel);
+        EditText adresse=findViewById(R.id.adresse);
+        EditText mdp=findViewById(R.id.mdp_inscription);
+        EditText site_web=findViewById(R.id.site_web);
+        Spinner type_service=findViewById(R.id.list_service);
+        Button submit=findViewById(R.id.submit);
 
         submit.setOnClickListener(this);
         type_service.setOnClickListener(this);

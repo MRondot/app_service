@@ -14,18 +14,17 @@ import com.example.app_service.client.modification.Annulation;
 
 public class ClientInscription extends AppCompatActivity {
 
-    EditText nom_c, prenom_c, mdp_c, mail_c, num_c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_client_inscription);
 
-        nom_c.findViewById(R.id.Inscription_Client_nom);
-        prenom_c.findViewById(R.id.Inscription_Client_prenom);
-        mdp_c.findViewById(R.id.Inscription_Client_mdp);
-        mail_c.findViewById(R.id.Inscription_Client_mail);
-        num_c.findViewById(R.id.Inscription_Client_tel);
+        EditText nom_c=findViewById(R.id.Inscription_Client_nom);
+        EditText prenom_c=findViewById(R.id.Inscription_Client_prenom);
+        EditText mdp_c=findViewById(R.id.Inscription_Client_mdp);
+        EditText mail_c=findViewById(R.id.Inscription_Client_mail);
+        EditText num_c=findViewById(R.id.Inscription_Client_tel);
 
     }
 

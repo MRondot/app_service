@@ -63,7 +63,7 @@
             android:name=".fournisseurPackage.FournisseurInscription"
             android:exported="false" />
         <activity
-            android:name=".Common.Authentification_screen"
+            android:name=".client.ClientInscription"
             android:exported="false" />
         <activity
             android:name=".fournisseurPackage.liste_resa"
@@ -74,8 +74,11 @@
             android:label="@string/title_FournisseurProfile" />
         <activity
             android:name=".client.Accueil"
-            android:exported="true"
-            android:label="@string/title_activity_accueil">
+            android:exported="false"
+            android:label="@string/title_activity_accueil"/>
+            <activity
+                android:name=".Common.Authentification_screen"
+                android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

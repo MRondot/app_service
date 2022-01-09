@@ -18,7 +18,6 @@ import com.example.app_service.fournisseurPackage.FournisseurInscription;
 public class Authentification_screen extends AppCompatActivity implements View.OnClickListener {
 
 
-    EditText adresse_mail, mdp;
     Button connexion_pro, connexion_client, inscripton_pro, inscription_client;
 
     @Override
@@ -26,12 +25,12 @@ public class Authentification_screen extends AppCompatActivity implements View.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_authentification);
 
-        adresse_mail.findViewById(R.id.adresseMail);
-        mdp.findViewById(R.id.mdp);
-        connexion_pro.findViewById(R.id.connexion_pro);
-        connexion_client.findViewById(R.id.connexion_client);
-        inscripton_pro.findViewById(R.id.inscription_pro);
-        inscription_client.findViewById(R.id.inscription_client);
+        EditText adresse_mail =findViewById(R.id.adresseMail);
+        EditText mdp = findViewById(R.id.mdp);
+        Button  connexion_pro = findViewById(R.id.connexion_pro);
+        Button  connexion_client = findViewById(R.id.connexion_client);
+        Button  inscripton_pro = findViewById(R.id.inscription_pro);
+        Button inscription_client = findViewById(R.id.inscription_client);
 
         connexion_pro.setOnClickListener(this);
         connexion_client.setOnClickListener(this);
