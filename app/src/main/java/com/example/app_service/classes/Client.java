@@ -15,6 +15,13 @@ public class Client {
         this.age = age;
         this.id_c = id_c;
     }
+
+    public Client(String nomC, String mail, String mdp){
+        this.nomC = nomC;
+        this.mail = mail;
+        this.mdp = mdp;
+    }
+
     //Accesseurs
     public String getNomC() {
         return nomC;
